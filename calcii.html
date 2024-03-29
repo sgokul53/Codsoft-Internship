@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Math Calculator</title>
+</head><br><br>
+<bold>
+<marquee>
+<legend align="center">MATH CALCULATOR</bold></marquee></legend><br><br>
+<style>
+body {
+    /* Set the background image and style */
+    background: url('bg.png') center/cover;
+    /* Other styles for the body */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+</style>
+<style>
+nav {
+      background-color:black;
+      color:white;
+      padding:10px;
+}
+nav ul {
+ list-style-type:bullet;
+ margin:0;
+ padding:0;
+}
+nav ul li {
+  display:inline;
+  margin-right:10px;
+}
+nav ul li a{
+  color:white;
+  text-decoration:Arial;}
+</style>
+<nav>
+  <ul>
+    <li><a href="calciis.html">CALCULATOR</a></li>
+    <li><a href="cfee.html">FEED-BACK</a></li>
+  </ul>
+</nav><br><br>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="buttons"><br><br>
+            <button onclick="clearResult()">C</button>&nbsp
+            <button onclick="appendToResult('7')">7</button>&nbsp
+            <button onclick="appendToResult('8')">8</button>&nbsp
+            <button onclick="appendToResult('9')">9</button>&nbsp
+            <button onclick="appendToResult('/')">/</button><br><br>
+
+            <button onclick="appendToResult('4')">4</button>&nbsp
+            <button onclick="appendToResult('5')">5</button>&nbsp
+            <button onclick="appendToResult('6')">6</button>&nbsp
+            <button onclick="appendToResult('*')">*</button><br><br>
+
+            <button onclick="appendToResult('1')">1</button>&nbsp
+            <button onclick="appendToResult('2')">2</button>&nbsp
+            <button onclick="appendToResult('3')">3</button>&nbsp
+            <button onclick="appendToResult('-')">-</button><br><br>
+
+            <button onclick="appendToResult('0')">0</button>&nbsp
+            <button onclick="appendToResult('.')">.</button>&nbsp
+            <button onclick="calculateResult()">=</button>&nbsp
+            <button onclick="appendToResult('+')">+</button><br><br>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</center>
+</html>
