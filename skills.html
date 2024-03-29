@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+  <link rel="stylesheet" href="index_style.css">
+</head>
+<style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .container {
+          width: 100%;
+          height: 20vh;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      nav {
+          background: #fff;
+          border-radius: 30px;
+          padding: 15px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      nav ul li {
+          display: inline-block;
+          list-style: none;
+          font-size: 2rem;
+          padding: 0 10px;
+          margin: 0 20px;
+          cursor: pointer;
+          position: relative;
+      }
+
+      nav ul li:after {
+          content: '';
+          width: 0;
+          height: 3px;
+          background: rgb(245, 120, 4);
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          transition: 0.5s;
+      }
+
+      nav ul li:hover::after {
+          width: 100%;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+      <nav>
+          <ul>
+              	<li><a href="index.html">HOME</a></li>
+    		<li><a href="skills.html">SKILLS</a></li>
+    		<li><a href="experience.html">EXPERIENCE</a></li>
+    		<li><a href="projects.html">PROJECTS</a></li>
+    		<li><a href="fee.html">FEED-BACK</a></li>
+          </ul>
+      </nav>
+  </div>
+
+  <section class="skills">
+    <h1>My Skills</h1>
+    <p>Here's a breakdown of my technical expertise:</p><br><br>
+    <ul class="skill-list">
+      <li>
+        <span class="skill-name">HTML</span> &nbsp; 
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-name">CSS</span> &nbsp; 
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-name">JavaScript</span> &nbsp; 
+        <div class="progress-bar">
+          <div class="progress" style="width: 60%;"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-name">Python</span> &nbsp; 
+        <div class="progress-bar">
+          <div class="progress" style="width: 50%;"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-name">Java</span> &nbsp; 
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+      </li>
+      </ul>
+  </section>
+</body>
+</html>

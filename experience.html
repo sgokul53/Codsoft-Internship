@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Experience</title>
+  <link rel="stylesheet" href="experience_style.css">
+</head>
+<style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .container {
+          width: 100%;
+          height: 20vh;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      nav {
+          background: #fff;
+          border-radius: 30px;
+          padding: 15px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      nav ul li {
+          display: inline-block;
+          list-style: none;
+          font-size: 2rem;
+          padding: 0 10px;
+          margin: 0 20px;
+          cursor: pointer;
+          position: relative;
+      }
+
+      nav ul li:after {
+          content: '';
+          width: 0;
+          height: 3px;
+          background: rgb(245, 120, 4);
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          transition: 0.5s;
+      }
+
+      nav ul li:hover::after {
+          width: 100%;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+      <nav>
+          <ul>
+              	<li><a href="index.html">HOME</a></li>
+    		<li><a href="skills.html">SKILLS</a></li>
+    		<li><a href="experience.html">EXPERIENCE</a></li>
+    		<li><a href="projects.html">PROJECTS</a></li>
+    		<li><a href="fee.html">FEED-BACK</a></li>
+          </ul>
+      </nav>
+  </div>
+  <section class="experience">
+    <h2>Work Experience</h2>
+    <ul class="experience-list">
+      <li>
+        <h3>Front End Devloper</h3>
+        <h4>ABC company,2,sardhar road,Anna Nagar,Chennai-600099.</h4>
+        <span class="date">2020 - 2022</span>
+        <p>Working closely with UI/UX designers, front-end developers transform design mockups and prototypes into functional web interfaces using HTML, CSS, and JavaScript.</p>
+      </li>
+      <li>
+        <h3>Full Stack Devloper</h3>
+        <h4>IJK company,49,DY patil road, Nehru nagar,Bangalore</h4>
+        <span class="date">2022 - Till now</span>
+        <p> Collaborate with designers, project managers, and other developers throughout the development lifecycle. This might involve tasks like:
+Requirement gathering and analysis
+System design and architecture
+Building front-end UI using HTML, CSS, and JavaScript frameworks (React, Angular, Vue.js)
+Developing back-end functionalities using programming languages (Python, Java, Node.js, etc.)
+Implementing APIs for data exchange between front-end and back-end
+Unit testing and integration testing to ensure code quality
+Deployment and maintenance of web applications on cloud platforms (AWS, Azure, GCP)</p>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
